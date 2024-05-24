@@ -1,0 +1,19 @@
+Deployment step:
+- Deploy ZUSD and USDC for hub and 3 spoke
+    npx hardhat run --network sepolia scripts/deploy/ZUSD.js
+    npx hardhat run --network baseSepolia scripts/deploy/ZUSD.js
+    npx hardhat run --network arbitrumSepolia scripts/deploy/ZUSD.js
+    npx hardhat run --network opSepolia scripts/deploy/ZUSD.js
+- Deploy hub -> hubBaseSepolia
+    npx hardhat run --network baseSepolia scripts/deploy/hubBaseSepolia.js
+- Deploy spoke -> spokeSepolia
+     npx hardhat run --network sepolia scripts/deploy/spokeSepolia.js
+     npx hardhat run --network arbitrumSepolia scripts/deploy/spokeArbitrum.js
+     npx hardhat run --network opSepolia scripts/deploy/spokeOptimism.js
+- Register sender and register spoke on hub => setRegisterSenderSpoke
+     npx hardhat run --network baseSepolia scripts/deploy/setRegisterSenderSpoke.js
+- Register sender on spoke => setRegisterSenderHub
+    npx hardhat run --network sepolia scripts/deploy/setRegisterSenderHub.js
+    npx hardhat run --network arbitrumSepolia scripts/deploy/setRegisterSenderHub.js
+    npx hardhat run --network opSepolia scripts/deploy/setRegisterSenderHub.js
+

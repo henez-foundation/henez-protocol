@@ -1,0 +1,313 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xFcfF7a7DEf1d0094636f7575bEd7Ff4B0D364f34",
+    "txHash": "0xf8829efc052c8ee1641f7bfb5a61f796384e27e2d26840fcdf0730abca4f4918"
+  },
+  "proxies": [
+    {
+      "address": "0x43FAAbE6A9a0F596d4E14a7af5BcCD9339b0ea7c",
+      "txHash": "0xfaa3d86ef827b18613ca2c0d49a27666c5588b033d143df4948318623eefa1b4",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x05DA486BDCe57fD9e7b8D6f8b1C5FC3981457a6c",
+      "txHash": "0x6f603a6e4262c921748f1de2605247d1953495566144e3a4d557263d037c7756",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0A579C18A5D7F8214487b9076DFFa0704724208F",
+      "txHash": "0xb2cceeb6b62fd3692063c5d0b796ff9715df33cbc73981d062a0df4aab3a0ebe",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "461d6c65821374034830a1a8a1a54c40d8a5c622d46bb3e8e336d9efad0dcfee": {
+      "address": "0x243274a209122c25e508d384b8B9d16e5dF62FcF",
+      "txHash": "0xdc76bcc1970ac105fd58f53d420f0e7e136d9691be7ac13b81c535622f13aa2c",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:40"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_state",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_struct(State)3161_storage",
+            "contract": "SpokeState",
+            "src": "contracts/protocol/spoke/SpokeState.sol:40"
+          },
+          {
+            "label": "wormholeRelayer",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_contract(IWormholeRelayer)4320",
+            "contract": "SpokeState",
+            "src": "contracts/protocol/spoke/SpokeState.sol:41"
+          },
+          {
+            "label": "wormhole",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_contract(IWormhole)3886",
+            "contract": "SpokeState",
+            "src": "contracts/protocol/spoke/SpokeState.sol:42"
+          },
+          {
+            "label": "registeredSenders",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_mapping(t_uint16,t_bytes32)",
+            "contract": "SpokeState",
+            "src": "contracts/protocol/spoke/SpokeState.sol:43"
+          },
+          {
+            "label": "_paused",
+            "offset": 0,
+            "slot": "166",
+            "type": "t_bool",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "167",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:116"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "216",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "217",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:88"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "266",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "Spoke",
+            "src": "contracts/protocol/spoke/Spoke.sol:313"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IWormhole)3886": {
+            "label": "contract IWormhole",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IWormholeRelayer)4320": {
+            "label": "contract IWormholeRelayer",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint16,t_bytes32)": {
+            "label": "mapping(uint16 => bytes32)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Provider)3125_storage": {
+            "label": "struct SpokeStorage.Provider",
+            "members": [
+              {
+                "label": "chainId",
+                "type": "t_uint16",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "wormholeRelayer",
+                "type": "t_address",
+                "offset": 2,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(State)3161_storage": {
+            "label": "struct SpokeStorage.State",
+            "members": [
+              {
+                "label": "provider",
+                "type": "t_struct(Provider)3125_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "consistencyLevel",
+                "type": "t_uint8",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "hubChainId",
+                "type": "t_uint16",
+                "offset": 1,
+                "slot": "1"
+              },
+              {
+                "label": "hubContractAddress",
+                "type": "t_address",
+                "offset": 3,
+                "slot": "1"
+              },
+              {
+                "label": "zUSD",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "badCollateralRatio",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "totalDepositedAsset",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "poolTotalCirculation",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "mintVaultMaxSupply",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "safeCollateralRatio",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "keeperRatio",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "wormholeGasLimit",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "consumedMessages",
+                "type": "t_mapping(t_bytes32,t_bool)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "______gap",
+                "type": "t_array(t_uint256)50_storage",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "USDC",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "61"
+              }
+            ],
+            "numberOfBytes": "1984"
+          },
+          "t_uint16": {
+            "label": "uint16",
+            "numberOfBytes": "2"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}
